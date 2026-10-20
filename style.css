@@ -1,0 +1,153 @@
+
+/* 1. Main website background */
+body {
+    background-color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #334155;
+}
+
+/* 2. Main white card */
+.card {
+    background-color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 3. Website heading */
+.card h1 {
+    color: #1e3a8a;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* 4. Paragraph text */
+.card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+/* 5. Profile picture */
+.card img {
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #dbeafe;
+    box-sizing: border-box;
+}
+
+/* 6. Button design */
+.card button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+/* Reset button colour */
+.card #resetButton {
+    background-color: #dc2626;
+}
+
+/* Reset button hover colour */
+.card #resetButton:hover {
+    background-color: #991b1b;
+}
+
+/* Change Message button colour */
+.card #colorButton {
+    background-color: #16a34a;
+}
+
+/* Change Message hover colour */
+.card #colorButton:hover {
+    background-color: #15803d;
+}
+
+/* 7. Button hover effect */
+.card button:hover {
+    background-color: #1e40af;
+}
+
+/* 8. Small-screen adjustments */
+@media (max-width: 600px) {
+    .card {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .card h1 {
+        font-size: 26px;
+    }
+}
+
+/* Navigation menu */
+.navbar {
+    background-color: #1e3a8a;
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Navigation links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Mouse hover effect */
+.navbar a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+/* Small-screen menu */
+@media (max-width: 600px) {
+    .navbar {
+        gap: 18px;
+        padding: 14px 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+/* WhatsApp contact button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #15803d;
+}
+

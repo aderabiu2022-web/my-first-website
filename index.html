@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="card" id="home">
+
+        <h1>Welcome to My Website</h1>
+
+       <img src="./myphoto .jpg" alt="My picture" width="200">
+
+        <p id="about">
+    I'm Rabiu, and I'm learning to build
+    websites from scratch.
+</p>
+
+        <button id="myButton">Click Me</button>
+
+        <p id="message"></p>
+        <button id="colorButton">Change Message</button>
+        <button id="resetButton">Reset Counter</button>
+
+    </div>
+    
+<section id="contact" class="card">
+    <h1>Contact Me</h1>
+
+    <p>Thank you for visiting my website!</p>
+
+    <p>You can contact me using the details below.</p>
+
+    <p>Email: aderabiu2022@gmail.com</p>
+    <a class="whatsapp-button" href="https://wa.me/2349122412439" target="_blank">Chat with me on WhatsApp</a>
+</section>
+
+    <script>
+        const button = document.getElementById("myButton");
+        const message = document.getElementById("message");
+        const colorButton = document.getElementById("colorButton");
+
+   
+const colors = ["lightgreen", "lightblue", "lightpink"];
+let colorIndex = 0;
+
+colorButton.addEventListener("click", function() {
+    message.textContent = "Great job! You are learning JavaScript!";
+    message.style.color = "green";
+
+    document.body.style.backgroundColor = colors[colorIndex];
+
+    colorIndex = colorIndex + 1;
+
+    if (colorIndex === colors.length) {
+        colorIndex = 0;
+    }
+});
+
+
+        let count = 0;
+
+button.addEventListener("click", function() {
+    count = count + 1;
+
+            if (count === 1) {
+                message.textContent =
+                    "You have clicked the button 1 time!";
+            } else {
+                message.textContent =
+                    "You have clicked the button " + count + " times!";
+                    
+const resetButton = document.getElementById("resetButton");
+
+resetButton.addEventListener("click", function() {
+    count = 0;
+    message.textContent = "Counter has been reset to zero!";
+});
+
+            }
+        });
+    </script>
+
+</body>
+</html>
